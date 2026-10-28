@@ -5,7 +5,7 @@ import urllib.request
 import requests
 
 try:
-    response = requests.get("https://science.nasa.gov/wp-json/wp/v2/apod-basic/261026")
+    response = requests.get("https://science.nasa.gov/wp-json/wp/v2/apod-basic")
     data = response.json()
     if data["media_type"] == "image":
         try:
